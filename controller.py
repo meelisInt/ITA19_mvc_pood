@@ -28,3 +28,6 @@ class Controller:
             self.view.deleteItem(name)
         except:
             print("Failed to delete item.")
+    def deleteAllItems(self):
+        items = self.model.deleteAllItems()
+        self.view.deleteAllItems()

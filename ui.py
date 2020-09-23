@@ -26,3 +26,7 @@ shop.showItem("wine")
 shop.deleteItem("milk")
 
 shop.showItems()
+
+shop.deleteAllItems()
+
+shop.showItem("wine")

@@ -44,3 +44,6 @@ def deleteItem(name):
         else:
             continue
             raise exceptions.ItemExists("Not found {} item.".format(name))
+def deleteAllItems():
+    global items
+    items.clear()

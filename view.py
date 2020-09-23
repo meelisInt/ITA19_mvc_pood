@@ -30,3 +30,6 @@ class View:
     def deleteItem(self, name):
         print("Deleting {} item.".format(name))
         print("Item {} is deleted.".format(name))
+    # delete all items
+    def deleteAllItems(self):
+        print("All items have been deleted.")
