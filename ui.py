@@ -25,8 +25,9 @@ shop.showItem("wine")
 
 shop.deleteItem("milk")
 
-shop.showItems()
-
-shop.deleteAllItems()
 
 shop.showItem("wine")
+
+'''shop.updateItem("wine", 10, 10)'''
+
+shop.showItems()

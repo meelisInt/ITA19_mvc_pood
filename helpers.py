@@ -44,6 +44,18 @@ def deleteItem(name):
         else:
             continue
             raise exceptions.ItemExists("Not found {} item.".format(name))
+# delete all items
 def deleteAllItems():
     global items
     items.clear()
+# update items price and amount
+'''def updateItem(name, price, amount):
+    global items
+    products = []
+    for item in items:
+        products.append(list(item.values())[0])
+    if product not in products:
+        print("Product {} not in the list".format(name))
+    else:
+        items[products.index(product)] = {"name":name, "price":price, "amount":amount}'''
+

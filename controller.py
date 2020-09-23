@@ -31,3 +31,13 @@ class Controller:
     def deleteAllItems(self):
         items = self.model.deleteAllItems()
         self.view.deleteAllItems()
+
+    '''def updateItem(self, name, price, amount):
+        if (price <= 0):
+            print("Price must be higher than 0")
+        elif (amount <= 0):
+            print("Amount must be higher than 0")
+        else:
+            old_product = self.model.showItem(name)
+            self.model.updateItem(name, price, amount)
+            self.view.updateItem(name, old_product['price'], old_product['amount'], price, amount)'''
