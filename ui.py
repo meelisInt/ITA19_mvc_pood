@@ -19,15 +19,8 @@ shop.addItem("milk", 0.50, 50)
 shop.addItem("wine", 5.60, 5)
 
 # show items
-shop.showItems()
+#shop.showItems()
 # show item
-shop.showItem("wine")
+#shop.showItem("wine")
 
-shop.deleteItem("milk")
-
-
-shop.showItem("wine")
-
-'''shop.updateItem("wine", 10, 10)'''
-
-shop.showItems()
+shop.updateItem("milk", 1, 10)

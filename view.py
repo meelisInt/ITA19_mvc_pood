@@ -33,10 +33,12 @@ class View:
     # delete all items
     def deleteAllItems(self):
         print("All items have been deleted.")
-    # updating item
-    '''def updateItem(self, name, old_price, old_amount, new_price, new_amount):
-        print("{} has been updated".format(name))
-        if(old_price != new_price):
-            print("Price has been changed from {} to {}".format(old_price, new_price))
-        if(old_amount != new_amount):
-            print("Amount has been changed from {} to {}".format(old_amount, new_amount))'''
+    # update item
+    def updateItem(self, name):
+        print("Shop item {} is updated.".format(name))
+        print("============================")
+     # no item to update error
+    def noItemToUpdateError(self, name):
+        print("============================")
+        print("Not possible to update item {}".format(name))
+        print("============================")

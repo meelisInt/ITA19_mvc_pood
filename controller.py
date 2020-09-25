@@ -32,12 +32,11 @@ class Controller:
         items = self.model.deleteAllItems()
         self.view.deleteAllItems()
 
-    '''def updateItem(self, name, price, amount):
-        if (price <= 0):
-            print("Price must be higher than 0")
-        elif (amount <= 0):
-            print("Amount must be higher than 0")
-        else:
-            old_product = self.model.showItem(name)
+    def updateItem(self, name, price, amount):
+        try:
             self.model.updateItem(name, price, amount)
-            self.view.updateItem(name, old_product['price'], old_product['amount'], price, amount)'''
+            self.view.updateItem(name)
+            self.showItem(name)
+        except:
+            self.view.noItemToUpdateError(name)
+            self.view.noItemError(name)
