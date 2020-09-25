@@ -28,8 +28,7 @@ class View:
         print("============================")
     # delete item
     def deleteItem(self, name):
-        print("Deleting {} item.".format(name))
-        print("Item {} is deleted.".format(name))
+        print("Item {} has been deleted.".format(name))
     # delete all items
     def deleteAllItems(self):
         print("All items have been deleted.")
@@ -42,3 +41,5 @@ class View:
         print("============================")
         print("Not possible to update item {}".format(name))
         print("============================")
+    def noItemToDelete(self, name):
+        print("Failed to delete {}, item doesn't exist.".format(name))

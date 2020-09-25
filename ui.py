@@ -24,3 +24,7 @@ shop.addItem("wine", 5.60, 5)
 #shop.showItem("wine")
 
 shop.updateItem("milk", 1, 10)
+
+shop.deleteItem("milk")
+
+shop.deleteAllItems()

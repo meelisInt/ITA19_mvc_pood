@@ -27,9 +27,10 @@ class Controller:
             self.model.deleteItem(name)
             self.view.deleteItem(name)
         except:
-            print("Failed to delete item.")
+            self.view.noItemToDelete(name)
+
     def deleteAllItems(self):
-        items = self.model.deleteAllItems()
+        self.model.deleteAllItems()
         self.view.deleteAllItems()
 
     def updateItem(self, name, price, amount):

@@ -37,13 +37,16 @@ def showItem(name):
 # delete item
 def deleteItem(name):
     global items
+    isDeleted = False
     for item in items:
         # if the name is the same as we search
         if (item.getName() == name):
             items.remove(item)
+            isDeleted = True
         else:
             continue
-            raise exceptions.ItemNotExists("Not found {} item.".format(name))
+    if (isDeleted != True):
+        raise exceptions.ItemNotExists("Not found {} item.".format(name))
 # delete all items
 def deleteAllItems():
     global items
